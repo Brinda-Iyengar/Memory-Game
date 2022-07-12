@@ -1,6 +1,6 @@
 body {
   text-align: center;
-  background-color: #011F3F;
+  background-color: #d3f7f8;
 }
 
 #level-title {
@@ -50,4 +50,13 @@ body {
 .pressed {
   box-shadow: 0 0 20px white;
   background-color: grey;
+}
+
+.start{
+  color: black;
+  background-color: rgb(248, 210, 228);
+  font-size: 30px;
+  border: 1px solid black;
+  border-radius: 15px;
+  font-family: 'Times New Roman';
 }
