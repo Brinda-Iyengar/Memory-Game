@@ -7,11 +7,12 @@ var userClickedPattern = [];
 var started = false;
 var level = 0;
 
-$(document).keypress(function() {
+$(".start").click(function() {
   if (!started) {
     $("#level-title").text("Level " + level);
     nextSequence();
     started = true;
+    $(".start").text("");
   }
 });
 
@@ -37,8 +38,8 @@ function checkAnswer(currentLevel) {
     } else {
       playSound("wrong");
       $("body").addClass("game-over");
-      $("#level-title").text("Game Over, Press Enter to Restart");
-
+      $("#level-title").text("Game Over");
+       $(".start").text("Restart Game");
       setTimeout(function () {
         $("body").removeClass("game-over");
       }, 200);
